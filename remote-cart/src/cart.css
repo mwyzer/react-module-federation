@@ -1,0 +1,11 @@
+.mf-cart { position: relative; border: 2px dashed #db2777; border-radius: 12px; padding: 28px 16px 16px; background: #fff; }
+.mf-cart--empty p { color: #64748b; margin: 0; }
+.mf-cart__tag { position: absolute; top: -11px; left: 12px; background: #db2777; color: #fff; font: 600 11px/1 system-ui; padding: 5px 8px; border-radius: 6px; }
+.mf-cart__list { list-style: none; margin: 0; padding: 0; }
+.mf-cart__item { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid #f1f5f9; }
+.mf-cart__item small { display: block; color: #64748b; }
+.mf-cart__qty { display: flex; align-items: center; gap: 6px; }
+.mf-cart__qty button { border: 1px solid #e2e8f0; background: #f8fafc; border-radius: 6px; min-width: 28px; height: 28px; cursor: pointer; }
+.mf-cart__qty .mf-cart__remove { color: #e11d48; padding: 0 8px; }
+.mf-cart__footer { display: flex; justify-content: space-between; padding: 14px 0; font-size: 18px; }
+.mf-cart__clear { width: 100%; padding: 10px; border: 0; border-radius: 8px; background: #fce7f3; color: #be185d; font-weight: 600; cursor: pointer; }

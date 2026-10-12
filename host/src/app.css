@@ -1,0 +1,23 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: #f1f5f9; color: #0f172a; }
+a { color: #2563eb; }
+.shell { min-height: 100vh; display: flex; flex-direction: column; }
+.shell__header { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding: 14px 24px; background: #1e293b; color: #fff; border-bottom: 4px solid #3b82f6; }
+.shell__brand { color: #fff; font-weight: 800; font-size: 20px; text-decoration: none; }
+.shell__nav { display: flex; gap: 6px; flex-wrap: wrap; }
+.shell__nav a { color: #cbd5e1; text-decoration: none; padding: 8px 12px; border-radius: 8px; display: inline-flex; align-items: center; gap: 6px; }
+.shell__nav a.active { background: #334155; color: #fff; }
+.shell__main { flex: 1; width: 100%; max-width: 1100px; margin: 0 auto; padding: 24px 16px; }
+.shell__title { margin: 0 0 24px; }
+.shell__footer { text-align: center; padding: 16px; color: #64748b; font-size: 13px; }
+.hero { position: relative; border: 2px dashed #3b82f6; border-radius: 12px; padding: 32px 24px 24px; background: #fff; margin-bottom: 28px; }
+.hero__tag { position: absolute; top: -11px; left: 12px; background: #3b82f6; color: #fff; font: 600 11px/1 system-ui; padding: 5px 8px; border-radius: 6px; }
+.hero h1 { margin-top: 0; }
+.hero p { color: #475569; max-width: 720px; line-height: 1.6; }
+.hero__cta { display: inline-block; margin-top: 8px; padding: 10px 16px; background: #3b82f6; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 600; }
+.home-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 24px; align-items: start; }
+@media (max-width: 760px) { .home-grid { grid-template-columns: 1fr; } }
+.remote-loading { padding: 24px; border-radius: 12px; background: #e2e8f0; color: #475569; animation: pulse 1.2s infinite; }
+.remote-error { padding: 16px; border-radius: 12px; background: #fef2f2; border: 1px solid #fecaca; color: #991b1b; }
+.remote-error code { display: block; margin-top: 8px; font-size: 12px; color: #b91c1c; word-break: break-all; }
+@keyframes pulse { 50% { opacity: .55; } }

@@ -1,0 +1,29 @@
+{
+  "name": "react-module-federation",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Contoh micro-frontend React dengan Webpack 5 Module Federation (host + 2 remote)",
+  "workspaces": ["host", "remote-products", "remote-cart"],
+  "scripts": {
+    "start": "concurrently -n host,products,cart -c blue,green,magenta \"npm:start -w host\" \"npm:start -w remote-products\" \"npm:start -w remote-cart\"",
+    "build": "npm run build -w remote-products -w remote-cart -w host"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "6.28.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.26.0",
+    "@babel/preset-env": "7.26.0",
+    "@babel/preset-react": "7.26.3",
+    "babel-loader": "9.2.1",
+    "concurrently": "9.1.0",
+    "css-loader": "7.1.2",
+    "html-webpack-plugin": "5.6.3",
+    "style-loader": "4.0.0",
+    "webpack": "5.97.1",
+    "webpack-cli": "5.1.4",
+    "webpack-dev-server": "5.2.0"
+  }
+}

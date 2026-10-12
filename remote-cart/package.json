@@ -1,0 +1,9 @@
+{
+  "name": "remote-cart",
+  "private": true,
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "serve": "npx serve dist -l 3002 --cors"
+  }
+}
